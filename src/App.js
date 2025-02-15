@@ -13,7 +13,7 @@ function App() {
   }, [cartItems]);
 
   useEffect(() => {
-    dispatch(getCartItems());
+    dispatch(getCartItems("cartItems"));
   }, []);
 
   if (isLoading) {
